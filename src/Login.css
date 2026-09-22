@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f3f8f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-left {
+  width: 55%;
+  min-height: 100vh;
+  padding: 55px 8%;
+  background: linear-gradient(145deg, #174d2c, #2f7d46);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-left::after {
+  content: "🌿  🌱  🌾  🍃";
+  position: absolute;
+  bottom: 35px;
+  left: 8%;
+  font-size: 42px;
+  opacity: 0.45;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.15);
+  border-radius: 18px;
+  font-size: 32px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.brand p {
+  margin: 5px 0 0;
+  opacity: 0.85;
+}
+
+.farmer-message {
+  max-width: 600px;
+  margin-top: 120px;
+}
+
+.farmer-message > span {
+  font-size: 70px;
+}
+
+.farmer-message h2 {
+  font-size: 42px;
+  margin: 18px 0 12px;
+}
+
+.farmer-message p {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.login-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 520px;
+  margin-top: 35px;
+}
+
+.login-features div {
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.09);
+  border-radius: 12px;
+}
+
+.login-card {
+  width: 45%;
+  max-width: 500px;
+  align-self: center;
+  margin: 35px auto;
+  padding: 42px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 18px 55px rgba(30, 65, 40, 0.15);
+}
+
+.login-logo {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  background: #e8f5e9;
+  border-radius: 20px;
+  font-size: 38px;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin: 0;
+  color: #183c25;
+  font-size: 30px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #718078;
+  line-height: 1.5;
+  margin: 10px 0 30px;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 8px;
+  color: #294532;
+  font-weight: 600;
+}
+
+.input-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccd8ce;
+  border-radius: 12px;
+  padding: 0 14px;
+  margin-bottom: 18px;
+  background: #fbfdfb;
+}
+
+.input-wrap:focus-within {
+  border-color: #3d914f;
+  box-shadow: 0 0 0 3px rgba(61,145,79,0.12);
+}
+
+.input-wrap span {
+  margin-right: 9px;
+}
+
+.input-wrap input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 15px 5px;
+  font-size: 15px;
+  background: transparent;
+}
+
+.primary-btn {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 15px;
+  background: #2f7d46;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #246538;
+}
+
+.back-btn {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #2f7d46;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.language-box {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 28px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f2f7f2;
+  color: #45604d;
+  font-size: 14px;
+}
+
+.voice-help {
+  text-align: center;
+  margin-top: 16px;
+  color: #607367;
+  font-size: 13px;
+}
+
+.demo-note {
+  text-align: center;
+  color: #9a9f9b;
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+@media (max-width: 850px) {
+  .login-page {
+    display: block;
+  }
+
+  .login-left {
+    width: 100%;
+    min-height: auto;
+    padding: 30px 7%;
+  }
+
+  .farmer-message {
+    margin-top: 55px;
+  }
+
+  .farmer-message h2 {
+    font-size: 32px;
+  }
+
+  .login-features {
+    margin-bottom: 30px;
+  }
+
+  .login-card {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-features {
+    grid-template-columns: 1fr;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+  }
+}
